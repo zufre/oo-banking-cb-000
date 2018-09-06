@@ -24,6 +24,7 @@ class BankAccount
   end
 
   def valid?
-    balance >=0 && status = "open"
+    balance >=0 && status = "open" ? true
+: false
   end
 end
