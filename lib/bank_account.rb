@@ -1,5 +1,5 @@
 class BankAccount
-  attr_writer :balance
+  attr_writer :balance :status
   attr_reader :name
   def initialize(name)
     @name = name
@@ -24,6 +24,6 @@ class BankAccount
   end
 
   def valid?
-    @balance >=0 && @status = "open"
+    balance >=0 && status = "open"
   end
 end
